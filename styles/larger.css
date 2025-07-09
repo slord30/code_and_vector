@@ -1,0 +1,24 @@
+@media screen and (min-width: 375px) {
+    
+/**************home banner*****************/
+    nav a .logo {
+        width: 275px;
+    }
+
+    button#menu {
+        display: none;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .content h1 {
+        font-size: 160px;
+    }     
+
+    .content h2 {
+        font-size: 120px;
+    }
+
+}
