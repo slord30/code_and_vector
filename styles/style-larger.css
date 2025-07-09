@@ -1,121 +1,221 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-:root {
-    --primary: #431951;
-    --primary-accent: #D13776;
-}
-
-.hero {
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(12,3,51,0.3), rgba(12,3,51,0.3));
-    position: relative;
-    padding: 0 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-nav {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 20px 8%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-nav a .logo {
-    width: 275px;
-}
-
-nav ul li {
-    list-style: none;
-    display: inline;
-    margin-left: 40px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 17px;
-    transition: 0.5s;
-}
-
-nav ul li a:hover {
-    border: 2px solid #fff;
-    padding: 8px;
-}
-
-.content {
-    text-align: center;
-}
-
-.content h1 {
-    font-size: 160px;
-    color: #fff;
-    font-weight: 600;
-    transition: 0.5s;
-}
-
-.content h2 {
-    font-size: 120px;
-    color: #fff;
-    font-weight: 600;
-    transition: 0.5s;
-}
-
-.content h1:hover {
-    -webkit-text-stroke: 2px #fff;
-    color: transparent;
-}
-
-.content h2:hover {
-    -webkit-text-stroke: 2px #fff;
-    color: transparent;
-}
-
-.content a {
-    text-decoration: none;
-    display: inline-block;
-    color: #fff;
-    font-size: 24px;
-    border: 2px solid #fff;
-    padding: 14px 70px;
-    border-radius: 50px;
-    margin-top: 50px;
-}
-
-.content a:hover{
-    background-color: #fff;
-    font-weight: 600;
-    color: var(--primary-accent);
-}
-
-.back-video {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-}
-
-@media (min-aspect-ration: 16/9) {
-    .back-video {
+@media screen and (min-width: 500px) {
+    
+/**************home banner*****************/
+    #hero {
         width: 100%;
-        height: auto;
+        height: 100vh;
+        background-image: linear-gradient(rgba(12,3,51,0.3), rgba(12,3,51,0.3));
+        position: relative;
+        padding: 0 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-}
 
-@media (::-ms-expand-aspect-ration: 16/9) {
-    .back-video {
-        width: auto;
-        height: 100%;
+    nav {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 20px 8%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
+
+    nav a .logo {
+        width: 275px;
+    }
+
+    nav ul li {
+        list-style: none;
+        display: inline;
+        margin-left: 40px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 17px;
+        transition: 0.5s;
+    }
+
+    nav ul li a:hover { /*add white border around menu when hovering over it*/
+        border: 2px solid #fff;
+        padding: 8px;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .content h1 {
+        font-size: 160px;
+        color: #fff;
+        font-weight: 600;
+        transition: 0.5s;
+    }
+
+    .content h2 {
+        font-size: 120px;
+        color: #fff;
+        font-weight: 600;
+        transition: 0.5s; /*transition from solid to outline when hovering at a slower rate*/
+    }
+
+    .content h1:hover { /*hover over h1 word and the letters become outlined and the transparent*/
+        -webkit-text-stroke: 2px #fff;
+        color: transparent;
+    }
+
+    .content h2:hover {
+        -webkit-text-stroke: 2px #fff;
+        color: transparent;
+    }
+
+    .content a {
+        text-decoration: none;
+        display: inline-block;
+        color: #fff;
+        font-size: 24px;
+        border: 2px solid #fff;
+        padding: 14px 70px;
+        border-radius: 50px;
+        margin-top: 50px;
+    }
+
+    .content a:hover{
+        background-color: #fff;
+        font-weight: 600;
+        color: var(--primary-accent);
+    }
+
+    .back-video {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    @media (min-aspect-ration: 16/9) {
+        .back-video {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    @media (::-ms-expand-aspect-ration: 16/9) {
+        .back-video {
+            width: auto;
+            height: 100%;
+        }
+    }
+
+    /************sections**************/
+    #home,
+    #about,
+    #contact {
+        height: 100vh;
+    }
+
+    /********************about section******************/
+    #about {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        background: #000;
+        overflow: hidden;
+    }
+
+    .about-wrapper {
+        position: relative;
+        width: 100%;
+        height: 100;
+    }
+
+    .about-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+    }
+
+    /*This is what gives the smoke color*/
+    .about-overlay { 
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to top, #B67332, #B64A26, #A23A5C, #4E1950, #999999, #FFFFFF);
+        mix-blend-mode: color;
+        pointer-events: none;
+        z-index: 1;
+     }
+
+
+    .about-text {
+        position: relative;
+        z-index: 2;
+        color: white;
+        text-align: right;
+        padding-top: 40rem;
+        padding-right: 8%;
+        transform: translateY(-50%);
+    }
+
+    #about h1 {
+        color: #fff;
+        font-size: 8rem;
+        /*create animation for "welcome"*/
+        -webkit-text-stroke: 1px #fff; /*can remove this is you want text to disappear entirely*/
+        color: transparent;
+        background-image: linear-gradient(#fff, #fff);
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        background-position: -700px, 0;
+        animation: backcolor 5s linear infinite alternate;
+    }
+
+    #about h2 {
+        color: var(--primary);
+        font-size: 4.5rem;
+        -webkit-text-stroke: 1px #fff;
+    }
+
+    @keyframes backcolor {
+        100%{
+            background-position: 0 0;
+        }
+    }
+    /*end of animation css*/
+
+
+
+
+
+
+    /****************contact section******************/
+    #contact {
+        width: 100%;
+        height: 100vh;
+        background-color: var(--primary-accent);
+    }
+
+    article#contact {
+        padding-top: 15rem;
+        text-align: left;
+        padding-left: 8%;
+    }
+
+    #contact h1 {
+        color: #fff;
+        font-size: 6rem;
+    }
+
 }
