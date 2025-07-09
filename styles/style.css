@@ -1,0 +1,55 @@
+/*************mobile*************/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary: #501f61;
+    --primary-accent: #1D1735;
+    --text-color: #000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#nav {
+    position: fixed;
+    top: 0;
+    z-index: 1030; /* to prevent the navbar getting covered up by other content */
+ }
+
+
+/******************NAVIGATION******************/
+/* small view navigation */
+
+/* #menu {
+    display: block;
+    font-size: 2rem;
+    border: 0;
+    font-weight: 700;
+    text-decoration: none;
+    width: 100%;
+} */
+
+/* #menu::before {
+    content: "≡";
+}
+
+#menu.open::before {
+    content: "✖";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+} */
+
+
