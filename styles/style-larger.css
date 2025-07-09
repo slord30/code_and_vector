@@ -17,14 +17,14 @@
         position: absolute;
         top: 0;
         left: 0;
-        padding: 20px 8%;
+        padding: 10px 20px;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 
     nav a .logo {
-        width: 275px;
+        width: 100px;
     }
 
     nav ul li {
@@ -50,14 +50,14 @@
     }
 
     .content h1 {
-        font-size: 160px;
+        font-size: 80px;
         color: #fff;
         font-weight: 600;
         transition: 0.5s;
     }
 
     .content h2 {
-        font-size: 120px;
+        font-size: 60px;
         color: #fff;
         font-weight: 600;
         transition: 0.5s; /*transition from solid to outline when hovering at a slower rate*/

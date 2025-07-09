@@ -28,28 +28,27 @@ html {
 /******************NAVIGATION******************/
 /* small view navigation */
 
-/* #menu {
-    display: block;
-    font-size: 2rem;
+#menu {
+    font-size: 1.5rem;
     border: 0;
-    font-weight: 700;
-    text-decoration: none;
-    width: 100%;
-} */
+    background: none;
+    color: var(--dark-color-blue);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
 
-/* #menu::before {
-    content: "≡";
+#menu::before {
+	content: "☰";
 }
 
 #menu.open::before {
-    content: "✖";
+	content: "✖";
 }
 
-.navigation {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    list-style: none;
-} */
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+    display: block;
+}
 
 
