@@ -1,10 +1,9 @@
 //
 //    Toggle Mobile Navigation
 //
-const navbarMenu = document.querySelector("#navigation #navbar-menu");
-const hamburgerMenu = document.querySelector("#navigation .hamburger-menu");
-
-hamburgerMenu.addEventListener('click', function() {
-    navbarMenu.classList.toggle("open");
-    hamburgerMenu.classList.toggle("clicked");
+const navigation = document.querySelector('.navigation')
+const hamButton = document.querySelector('#menu');
+hamButton.addEventListener('click', () => {
+    navigation.classList.toggle('open')
+    hamButton.classList.toggle('open');
 });
