@@ -6,7 +6,7 @@ nav a .logo {
 }
 
 nav a .logo {
-    max-width: 85%; /* Ensure the image is responsive */
+    max-width: 50%; /* Ensure the image is responsive */
     height: auto; /* Maintain aspect ratio */
     margin-bottom: 1rem;
 }

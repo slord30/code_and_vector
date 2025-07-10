@@ -1,7 +1,7 @@
 @media screen and (min-width: 500px) {
 
     nav a .logo {
-        max-width: 25%; /* Ensure the image is responsive */
+        max-width: 50%; /* Ensure the image is responsive */
         height: auto; /* Maintain aspect ratio */
         margin-left: 2rem;
     }
