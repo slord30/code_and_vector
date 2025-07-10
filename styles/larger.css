@@ -2,16 +2,7 @@
 
     /**************home banner*****************/
 
-
-    nav a .logo {
-        width: 275px;
-    }
-
-    button#menu {
-        display: none;
-    }
-
-    /* .navigation {
+    .navigation {
         flex-direction: row;
     }
 
@@ -20,7 +11,7 @@
         flex: 1 1 100%;
         text-align: center;
         padding: .75rem;
-    } */
+    }
 
     .content {
         text-align: center;

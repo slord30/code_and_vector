@@ -48,9 +48,9 @@ nav {
     justify-content: space-between;
 }
 
-nav a .logo {
+/* nav a .logo {
     width: 150px;
-}
+} */
 
 nav ul li {
     list-style: none;
@@ -143,11 +143,8 @@ nav ul li a:hover {
 /******************NAVIGATION******************/
 /* small view navigation */
 
-button#menu {
-    display: block;
-}
 
-#menu {
+/* #menu {
     font-size: 1.5rem;
     border: 0;
     background: none;
@@ -168,7 +165,7 @@ button#menu {
 /* when the button is clicked - the open class is toggled (added/removed) */
 .open a {
     display: block;
-}
+} */
 
 
 
