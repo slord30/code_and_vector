@@ -1,0 +1,31 @@
+/*tablet and up*/ 
+/*for screens 768px or wider*/
+
+
+@media screen and (min-width: 768px) {
+
+    nav a .logo {
+        max-width: 35%;
+        /* Ensure the image is responsive */
+        height: auto;
+        /* Maintain aspect ratio */
+        margin-left: 2rem;
+    }
+
+    .content h1 {
+        font-size: 80px;
+    }
+
+    .content h2 {
+        font-size: 60px;
+    }
+
+    #about h1 {
+        font-size: 6rem;
+    }
+
+    #about h2 {
+        font-size: 3.5rem;
+    }
+
+}

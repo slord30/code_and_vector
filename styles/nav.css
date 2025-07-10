@@ -1,16 +1,4 @@
 
-nav a .logo {
-    display: flex; /* Use flexbox for centering the image */
-    justify-content: flex-start; /* Align image to the left */
-    margin-left: .5rem;
-}
-
-nav a .logo {
-    max-width: 50%; /* Ensure the image is responsive */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 1rem;
-}
-
 .navigation {
     display: flex;
     flex-direction: column;
