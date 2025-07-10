@@ -5,7 +5,7 @@
 @media screen and (min-width: 768px) {
 
     nav a .logo {
-        max-width: 35%;
+        max-width: 30%;
         /* Ensure the image is responsive */
         height: auto;
         /* Maintain aspect ratio */
@@ -13,19 +13,25 @@
     }
 
     .content h1 {
-        font-size: 80px;
+        font-size: 100px;
     }
 
     .content h2 {
-        font-size: 60px;
+        font-size: 80px;
     }
 
     #about h1 {
-        font-size: 6rem;
+        font-size: 5rem;
     }
 
     #about h2 {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
+
+    #contact h1 {
+        color: #fff;
+        font-size: 4rem;
+    }
+
 
 }

@@ -38,14 +38,18 @@ html {
 }
 
 nav a .logo {
-    display: flex; /* Use flexbox for centering the image */
-    justify-content: flex-start; /* Align image to the left */
+    display: flex;
+    /* Use flexbox for centering the image */
+    justify-content: flex-start;
+    /* Align image to the left */
     margin-left: .5rem;
 }
 
 nav a .logo {
-    max-width: 50%; /* Ensure the image is responsive */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 50%;
+    /* Ensure the image is responsive */
+    height: auto;
+    /* Maintain aspect ratio */
     margin-bottom: 1rem;
 }
 
@@ -187,6 +191,12 @@ nav ul li a:hover {
     z-index: 0;
 }
 
+#about h2 {
+    color: var(--primary);
+    font-size: 2rem;
+    -webkit-text-stroke: 1px #fff;
+}
+
 /*This is what gives the smoke color*/
 .about-overlay {
     content: '';
@@ -225,11 +235,6 @@ nav ul li a:hover {
     animation: backcolor 5s linear infinite alternate;
 }
 
-#about h2 {
-    color: var(--primary);
-    font-size: 2rem;
-    -webkit-text-stroke: 1px #fff;
-}
 
 @keyframes backcolor {
     100% {
@@ -244,17 +249,50 @@ nav ul li a:hover {
 /****************contact section******************/
 #contact {
     width: 100%;
-    height: 100vh;
-    background-color: var(--primary-accent);
+    background: linear-gradient(to top, #EB4607, #8500EB);
+    /* sky to water */
 }
 
 article#contact {
     padding-top: 15rem;
     text-align: left;
-    padding-left: 8%;
 }
 
 #contact h1 {
     color: #fff;
-    font-size: 6rem;
+    font-size: 2.5rem;
+    padding-left: 8%;
+}
+
+.wave-container {
+    height: 100vh;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 1;
+}
+
+.wave-container svg {
+    position: relative;
+    display: block;
+    width: 200%;
+    height: 100%;
+}
+
+.wave-container .wave {
+    animation: wave-animation 10s linear infinite alternate;
+}
+
+
+
+@keyframes wave-animation {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
