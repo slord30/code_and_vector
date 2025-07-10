@@ -1,6 +1,8 @@
-@media screen and (min-width: 375px) {
-    
-/**************home banner*****************/
+@media screen and (min-width: 500px) {
+
+    /**************home banner*****************/
+
+
     nav a .logo {
         width: 275px;
     }
@@ -9,13 +11,24 @@
         display: none;
     }
 
+    /* .navigation {
+        flex-direction: row;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+        text-align: center;
+        padding: .75rem;
+    } */
+
     .content {
         text-align: center;
     }
 
     .content h1 {
-        font-size: 160px;
-    }     
+        font-size: 180px;
+    }
 
     .content h2 {
         font-size: 120px;
