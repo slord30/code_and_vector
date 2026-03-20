@@ -1,78 +1,136 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code & Vector Web & Graphic Design</title>
-    <meta name="description" content="website for Code & Vector">
+    <title>Sarah Lord | Web & Graphic Design</title>
+    <meta name="description" content="Website for Sarah Lord Web & Graphic Design">
     <meta name="author" content="Sarah Lord">
-    <meta property="og:title" content="Code & Vector"/>
-    <meta property="og:type" content="website"/>
-    <meta propery="og:url" content="https://code&vector.com"/>
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Sarah Lord Designs - Web & Graphic Design" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://slord30.github.io/wdd231/project/index.html" />
+    <meta property="og:description"
+        content="Welcome to Sarah Lord Designs! I create thoughtful, modern websites and graphics that reflect your brand’s story and connect with your audience." />
+    <meta property="og:image" content="https://slord30.github.io/wdd231/project/images/logo-color.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Sarah Lord Web & Graphic Design logo" />
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style-larger.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <script defer src="scripts/nav.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Meow+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <!-- Scripts -->
+    <script type="module" src="scripts/main.js"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
 
 </head>
+
 <body>
-    <section id="home"> <!--section id=home to scroll to home section when selected in menu-->
-    <div id="hero">
-        <video autoplay loop muted plays-inline class="back-video">
-            <source src="images/smoke.mp4" type="video/mp4">
-        </video>
-        <a id="menu" href="#"></a>
+    <header id="home"> <!--header id=home to scroll to home section when selected in menu-->
         <nav id="nav">
             <a aria-label="click to go to home page" href="index.html">
-                <img src="images/cv-logo-light.png" aria-hidden="true" class="logo" decoding="async" alt="logo">
+                <img src="images/logo-white.png" alt="Sarah Lord Designs" class="logo" width="2131" height="595"
+                    decoding="async" loading="lazy">
             </a>
-            
+            <button type="button" id="menu" title="Title"></button>
             <ul class="navigation">
-                <li><a href="#home">HOME</a></li> <!--href = #home to scroll to home when clicked in menu-->
-                <li><a href="#about">ABOUT</a></li> <!--href = #about to scroll to about section when clicked in menu-->
-                <li><a href="#contact">CONTACT</a></li> <!--href = #contact to scroll to about contact when clicked in menu-->
+                <li><a href="index.html" class="current">HOME</a></li>
+                <!--href = #home to scroll to home when clicked in menu-->
+                <li><a href="about.html">ABOUT</a></li>
+                <!--href = #about to scroll to about section when clicked in menu-->
+                <li><a href="contact.html">CONTACT</a></li>
+                <!--href = #contact to scroll to contact section when clicked in menu-->
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <!--href = #portfolio to scroll to portfolio section when clicked in menu-->
             </ul>
         </nav>
-        <button class="hamburger-menu">
-            <span aria-hidden="true"></span>
-        </button>
-        <div class="content">
-            <h2>CREATIVE</h2>
-            <h1>DESIGNER</h1>
-            <a href="#">Quote</a>
+
+        <!-- Hero section -->
+        <div id="hero">
+            <video autoplay loop muted playsinline class="back-video">
+                <source src="images/smoke.mp4" type="video/mp4">
+            </video>
+            <div class="content">
+                <h1 id="top">CREATIVE</h1>
+                <h1>DESIGNER</h1>
+                <a href="contact.html">Quote</a>
+            </div>
         </div>
-    </div>
-    </section>
+    </header>
+
     <main>
-        <article id="about">
+        <article id="about"> <!--article id=about to scroll to about section when selected in menu-->
             <div class="about-wrapper">
-                <!-- <video autoplay loop muted plays-inline class="about-video">
-                    <source src="https://video.wixstatic.com/video/d47472_58cce06729c54ccb935886c4b3647274/1080p/mp4/file.mp4" type="video/mp4">
-                </video> -->
+                <video autoplay loop muted playsinline preload="auto" class="about-video">
+                    <source
+                        src="https://video.wixstatic.com/video/d47472_58cce06729c54ccb935886c4b3647274/1080p/mp4/file.mp4"
+                        type="video/mp4">
+                </video>
                 <div class="about-overlay"></div>
-                <div class="about-text">
+                <div class="welcome">
                     <h1>Welcome!</h1>
                     <h2>I'm Sarah Lord</h2>
+                    <a href="about.html">More About Me</a>
                 </div>
-            </div>          
+            </div>
         </article>
 
-        <article id="contact"> <!--section id=contact to scroll to contact section when selected in menu-->
-            <h1>Reach Out</h1>
-        </article>
+        <section id="spotlight">
+            <h2>Design Spotlights</h2>
+
+            <div id="spotlight-cards"></div>
+
+            <!-- Optional wave to blend into footer -->
+            <svg viewBox="0 0 1200 100" preserveAspectRatio="none" class="wave-svg">
+                <path d="M0,50 C300,150 900,-50 1200,50 L1200,100 L0,100Z"></path>
+            </svg>
+        </section>
+
+
     </main>
+
     <footer>
-        <div class="email">
-            <a href="mailto:codeandvector@gmail.com" target="blank"><img src="images/email.svg" alt="Email" width="35" class="em"></a>
+        <div>
+            <p><strong>Sarah Lord Designs</strong></p>
+            <p>(801) 573-0983</p>
+            <p>codeandvector@gmail.com</p>
+            <a href="https://www.loom.com/share/29d2d9c2220446b89892a36253cd6bbc?sid=4c8a45f8-4441-4f72-b1f2-cfdde3fe8d84" target="_blank" id="loom">
+                Watch my Loom Video
+            </a>
         </div>
         <div class="social">
-            <a href="#" target="blank"><img src="images/linkedin.svg" alt="LinedIn" width="35" class="li"></a>
+            <a href="https://www.linkedin.com/in/slord30/" target="_blank"><img src="images/linkedin-circle.svg"
+                    alt="LinkedIn" width="512" height="512" loading="lazy"></a>
+            <a href="https://www.facebook.com/sllord79" target="_blank"><img src="images/facebook.svg" alt="Facebook"
+                    width="512" height="512" loading="lazy"></a>
+            <a href="https://www.instagram.com/sarahllord/" target="_blank"><img src="images/instagram-circle.svg"
+                    alt="Instagram" width="512" height="512" loading="lazy"></a>
+        </div>
+        <div class="date">
+            <p id="copyright">
+                <span id="currentYear"></span>
+                <span id="name"> | Sarah Lord | </span>
+                <span id="country"> USA</span>
+            </p>
+            <p id="lastModified"></p>
         </div>
     </footer>
-
-
-
-
 </body>
+
+
 </html>

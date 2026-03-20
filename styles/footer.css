@@ -1,0 +1,79 @@
+:root {
+    --primary: #501f61;
+    --primary-accent: #1D1735;
+    --secondary: #EB0A00;
+    --secondary-accent: #EB0797;
+    --text-color: #000;
+
+    --font-cursive: 'Meow Script', cursive;
+    --font-text: 'Quicksand', sans-serif;
+    --font-heading: 'Poppins', sans-serif;
+}
+
+
+footer {
+    padding: 40px;
+    min-height: 220px;
+    box-sizing: border-box;
+    background-color: #fff;
+    text-align: center;
+}
+
+
+footer p {
+    font-family: var(--font-text);
+    color: #000;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.em {
+    display: block;
+    margin: 0 auto;
+}
+
+.social {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social img {
+    width: 25px;
+    height: 25px;
+    margin: 5px 8px 15px 0;
+}
+
+footer .date {
+    min-height: 1.5em; /* reserve height for JS content */
+}
+
+#loom {
+    color: var(--secondary);
+    font-family: var(--font-text);
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+#loom:hover {
+    color: var(--secondary-accent);
+}
+
+
+@media only screen and (min-width: 962px) {
+
+        footer {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-items: center;
+        align-items: center;
+        gap: 16px;
+        padding: 2rem;
+    }
+
+    .social img {
+        width: 40px;
+        height: 40px;
+    }
+}
