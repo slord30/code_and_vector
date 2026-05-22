@@ -166,7 +166,7 @@
             "client": "Walk",
             "category": "Graphic Design",
             "description": "A rustic, outdoor-inspired logo featuring textured mountains and a directional arrow path.",
-            "image": "images/portfolio/walk-logo.webp"
+            "image": "images/portfolio/camp-logo.webp"
         },
         {
             "id": 23,
@@ -174,7 +174,7 @@
             "client": "Lord Family Dentistry",
             "category": "Graphic Design",
             "description": "A professional dental practice logo featuring a modern tooth outline with a soft teal and green gradient.",
-            "image": "images/portfolio/lord-family-dentistry-logo.webp"
+            "image": "images/portfolio/LFD-logo.webp"
         },
         {
             "id": 24,
@@ -182,7 +182,7 @@
             "client": "College Park Ward",
             "category": "Graphic Design",
             "description": "A bright, retro-themed graphics layout featuring a sun and rainbow for a Girls Camp event.",
-            "image": "images/portfolio/girls-camp-tshirt.webp"
+            "image": "images/portfolio/gc-logo.webp"
         },
         {
             "id": 25,
@@ -190,7 +190,7 @@
             "client": "College Park Ward",
             "category": "Graphic Design",
             "description": "An inspirational graphics layout featuring stylized sailboats and a quote by Thomas S. Monson.",
-            "image": "images/portfolio/sails-camp-poster.webp"
+            "image": "images/portfolio/sailboats-logo.webp"
         },
         {
             "id": 26,
@@ -198,7 +198,7 @@
             "client": "The Woodlands Ward",
             "category": "Graphic Design",
             "description": "A delicate, nature-inspired badge illustration featuring illustrated wildflowers for a Young Women's camp event.",
-            "image": "images/portfolio/woodlands-camp-tshirt.webp"
+            "image": "images/portfolio/shirt-graphic.webp"
         },
         {
             "id": 27,
@@ -206,7 +206,7 @@
             "client": "College Park Ward",
             "category": "Graphic Design",
             "description": "A minimalist, faith-based graphic layout featuring a bold sun bursting around text and a scripture citation.",
-            "image": "images/portfolio/disciple-camp-logo.webp"
+            "image": "images/portfolio/sun-logo.webp"
         }
 
     ]
